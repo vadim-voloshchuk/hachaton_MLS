@@ -38,8 +38,15 @@ def processing():
     okpd2 = request.args.get('okpd2')
     description = request.args.get('description')
 
-    return json.dumps({'sector': {'value' : sector, 'check' : True, 'percents': 80 }, 'subSector': {'value' : subSector, 'check' : False, 'percents': 35 }, 'technologies1Lvl': {'value' : technologies1Lvl, 'check' : True, 'percents': 80 }, 'technologies2Lvl': {'value' : technologies2Lvl, 'check' : True, 'percents': 80 }, 'technologies3Lv3': {'value' : technologies3Lv3, 'check' : True, 'percents': 80 }, 'okpd2': {'value' : okpd2, 'check' : True, 'percents': 80 }, 'description': {'value' : description, 'check' : True, 'percents': 80 }})
+    return json.dumps({'sector': {'value' : sector, 'check' : True, 'percents': 80 }, 
+                        'subSector': {'value' : subSector, 'check' : False, 'percents': 35 },
+                        'technologies1Lvl': {'value' : technologies1Lvl, 'check' : True, 'percents': 80 },
+                        'technologies2Lvl': {'value' : technologies2Lvl, 'check' : True, 'percents': 80 },
+                        'technologies3Lv3': {'value' : technologies3Lv3, 'check' : True, 'percents': 80 },
+                        'okpd2': {'value' : okpd2, 'check' : True, 'percents': 80 },
+                        'description': {'value' : description,
+                        'check' : True, 'percents': 80 }})
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    application.run(host='0.0.0.0', debug=True)
