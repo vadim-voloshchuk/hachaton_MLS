@@ -42,7 +42,7 @@ def processing():
                         'subSector': {'value' : subSector, 'check' : False, 'percents': 35 },
                         'technologies1Lvl': {'value' : technologies1Lvl, 'check' : True, 'percents': 80 },
                         'technologies2Lvl': {'value' : technologies2Lvl, 'check' : True, 'percents': 80 },
-                        'technologies3Lv3': {'value' : technologies3Lv3, 'check' : True, 'percents': 80 },
+                        'technologies3Lvl': {'value' : technologies3Lvl, 'check' : True, 'percents': 80 },
                         'okpd2': {'value' : okpd2, 'check' : True, 'percents': 80 },
                         'description': {'value' : description,
                         'check' : True, 'percents': 80 }})
